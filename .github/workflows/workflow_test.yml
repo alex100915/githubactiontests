@@ -1,0 +1,9 @@
+name: GitHub Actions Demo
+on: [push, pull_request]
+jobs:
+  Example-Actions-Job:
+  name: Exploritng GitHub Actions
+  runs-on: ubuntu-latest
+  steps:
+    # Display the event that triggered the worflow
+    - run: echo "The job was triggered by a ${{ github.event_name }} event."
